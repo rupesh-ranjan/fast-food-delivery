@@ -1,6 +1,12 @@
 export function RestaurantCard({ restaurantData }) {
-    const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla } =
-        restaurantData;
+    const {
+        cloudinaryImageId,
+        name,
+        cuisines,
+        avgRating,
+        costForTwo,
+        deliveryTime,
+    } = restaurantData;
     return (
         <div className="restaurant-card">
             <img
@@ -12,7 +18,7 @@ export function RestaurantCard({ restaurantData }) {
             <h4>{cuisines.join(", ")}</h4>
             <h4>{avgRating} Stars</h4>
             <h4>{costForTwo}</h4>
-            <h4>{sla.deliveryTime}</h4>
+            <h4>{deliveryTime}</h4>
         </div>
     );
 }

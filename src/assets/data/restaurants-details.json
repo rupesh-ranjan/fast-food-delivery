@@ -1,1761 +1,198 @@
 {
     "restaurants": [
         {
-            "info": {
-                "id": "509004",
-                "name": "Chinese Wok",
-                "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
-                "locality": "Serilingampally Mandal",
-                "areaName": "Madhapur",
-                "costForTwo": "₹250 for two",
-                "cuisines": ["Chinese", "Asian", "Tibetan", "Desserts"],
-                "avgRating": 4.1,
-                "parentId": "61955",
-                "avgRatingString": "4.1",
-                "totalRatingsString": "2.9K+",
-                "sla": {
-                    "deliveryTime": 32,
-                    "lastMileTravel": 1,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "30-35 mins",
-                    "lastMileTravelString": "1.0 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 23:00:00",
-                    "opened": true
-                },
-                "badges": {},
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {},
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "66% OFF",
-                    "subHeader": "UPTO ₹126",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/chinese-wok-serilingampally-mandal-madhapur-rest509004",
-                "type": "WEBLINK"
-            }
+            "id": "509004",
+            "name": "Chinese Wok",
+            "cloudinaryImageId": "e0839ff574213e6f35b3899ebf1fc597",
+            "costForTwo": "₹250 for two",
+            "cuisines": ["Chinese", "Asian", "Tibetan", "Desserts"],
+            "avgRating": 4.1,
+            "deliveryTime": 32
         },
         {
-            "info": {
-                "id": "11698",
-                "name": "Burger King",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/24/016e285f-051e-4207-b0ce-5d766a4495b0_11698.jpg",
-                "locality": "Madhapur",
-                "areaName": "Madhapur",
-                "costForTwo": "₹350 for two",
-                "cuisines": ["Burgers", "American"],
-                "avgRating": 4.2,
-                "parentId": "166",
-                "avgRatingString": "4.2",
-                "totalRatingsString": "19K+",
-                "sla": {
-                    "deliveryTime": 38,
-                    "lastMileTravel": 2.4,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "35-40 mins",
-                    "lastMileTravelString": "2.4 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 23:30:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "Rxawards/_CATEGORY-Burger.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Rxawards/_CATEGORY-Burger.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "60% OFF",
-                    "subHeader": "UPTO ₹120"
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "4.3",
-                        "ratingCount": "1.6K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/burger-king-madhapur-rest11698",
-                "type": "WEBLINK"
-            }
+            "id": "11698",
+            "name": "Burger King",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/24/016e285f-051e-4207-b0ce-5d766a4495b0_11698.jpg",
+            "costForTwo": "₹350 for two",
+            "cuisines": ["Burgers", "American"],
+            "avgRating": 4.2,
+            "deliveryTime": 38
         },
         {
-            "info": {
-                "id": "23695",
-                "name": "McDonald's",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/20/2e11140e-2b86-4a44-af83-93665f72cf2c_23695.jpg",
-                "locality": "Hitech City",
-                "areaName": "Madhapur",
-                "costForTwo": "₹400 for two",
-                "cuisines": ["Burgers", "Beverages", "Cafe", "Desserts"],
-                "avgRating": 4.3,
-                "parentId": "630",
-                "avgRatingString": "4.3",
-                "totalRatingsString": "99K+",
-                "sla": {
-                    "deliveryTime": 25,
-                    "lastMileTravel": 1.1,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "20-25 mins",
-                    "lastMileTravelString": "1.1 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-15 01:45:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        },
-                        {
-                            "imageId": "Rxawards/_CATEGORY-Burger.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                },
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Rxawards/_CATEGORY-Burger.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "ITEMS",
-                    "subHeader": "AT ₹179"
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/mcdonalds-hitech-city-madhapur-rest23695",
-                "type": "WEBLINK"
-            }
+            "id": "23695",
+            "name": "McDonald's",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/20/2e11140e-2b86-4a44-af83-93665f72cf2c_23695.jpg",
+
+            "costForTwo": "₹400 for two",
+            "cuisines": ["Burgers", "Beverages", "Cafe", "Desserts"],
+            "avgRating": 4.3,
+            "deliveryTime": 25
         },
         {
-            "info": {
-                "id": "8027",
-                "name": "Chili's American Grill & Bar",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/8/5/1fe28b93-b144-4751-9043-331ecefd3b9d_8027.jpg",
-                "locality": "Madhapur",
-                "areaName": "Madhapur",
-                "costForTwo": "₹900 for two",
-                "cuisines": ["Burgers", "Mexican"],
-                "avgRating": 4.2,
-                "parentId": "1870",
-                "avgRatingString": "4.2",
-                "totalRatingsString": "2.9K+",
-                "sla": {
-                    "deliveryTime": 35,
-                    "lastMileTravel": 1.9,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "30-35 mins",
-                    "lastMileTravelString": "1.9 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-15 00:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        },
-                        {
-                            "imageId": "newg.png",
-                            "description": "Gourmet"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                },
-                                {
-                                    "attributes": {
-                                        "description": "Gourmet",
-                                        "imageId": "newg.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "₹166 OFF",
-                    "subHeader": "ABOVE ₹999",
-                    "discountTag": "FLAT DEAL",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "4.0",
-                        "ratingCount": "4.4K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/chilis-american-grill-and-bar-madhapur-rest8027",
-                "type": "WEBLINK"
-            }
+            "id": "8027",
+            "name": "Chili's American Grill & Bar",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/8/5/1fe28b93-b144-4751-9043-331ecefd3b9d_8027.jpg",
+
+            "costForTwo": "₹900 for two",
+            "cuisines": ["Burgers", "Mexican"],
+            "avgRating": 4.2,
+            "deliveryTime": 35
         },
         {
-            "info": {
-                "id": "300776",
-                "name": "Krispy Kreme - Doughnuts & Coffee",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/1/fe918a9d-f332-4536-91c4-391a765ea928_300776.jpg",
-                "locality": "Hitech City",
-                "areaName": "Madhapur",
-                "costForTwo": "₹170 for two",
-                "cuisines": [
-                    "Desserts",
-                    "Cafe",
-                    "Bakery",
-                    "Coffee",
-                    "Beverages",
-                    "Snacks"
-                ],
-                "avgRating": 4.5,
-                "veg": true,
-                "parentId": "570",
-                "avgRatingString": "4.5",
-                "totalRatingsString": "1.1K+",
-                "sla": {
-                    "deliveryTime": 41,
-                    "lastMileTravel": 2.4,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "40-45 mins",
-                    "lastMileTravelString": "2.4 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 23:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "v1695133679/badges/Pure_Veg111.png",
-                            "description": "pureveg"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "pureveg",
-                                        "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "66% OFF",
-                    "subHeader": "UPTO ₹126",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "3.9",
-                        "ratingCount": "129"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/krispy-kreme-doughnuts-and-coffee-hitech-city-madhapur-rest300776",
-                "type": "WEBLINK"
-            }
+            "id": "300776",
+            "name": "Krispy Kreme - Doughnuts & Coffee",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/1/fe918a9d-f332-4536-91c4-391a765ea928_300776.jpg",
+            "costForTwo": "₹170 for two",
+            "cuisines": [
+                "Desserts",
+                "Cafe",
+                "Bakery",
+                "Coffee",
+                "Beverages",
+                "Snacks"
+            ],
+            "avgRating": 4.5,
+            "deliveryTime": 41
         },
         {
-            "info": {
-                "id": "355749",
-                "name": "Grameen Kulfi",
-                "cloudinaryImageId": "jugig4owd8e3ev6jjcj7",
-                "locality": "kavuri Hills",
-                "areaName": "Siddhi Vinayak Nagar",
-                "costForTwo": "₹120 for two",
-                "cuisines": ["Ice Cream", "Desserts"],
-                "avgRating": 4.7,
-                "veg": true,
-                "parentId": "12175",
-                "avgRatingString": "4.7",
-                "totalRatingsString": "862",
-                "sla": {
-                    "deliveryTime": 18,
-                    "lastMileTravel": 0.9,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "15-20 mins",
-                    "lastMileTravelString": "0.9 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 23:59:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        },
-                        {
-                            "imageId": "v1695133679/badges/Pure_Veg111.png",
-                            "description": "pureveg"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                },
-                                {
-                                    "attributes": {
-                                        "description": "pureveg",
-                                        "imageId": "v1695133679/badges/Pure_Veg111.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "66% OFF",
-                    "subHeader": "UPTO ₹126",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/grameen-kulfi-kavuri-hills-siddhi-vinayak-nagar-rest355749",
-                "type": "WEBLINK"
-            }
+            "id": "355749",
+            "name": "Grameen Kulfi",
+            "cloudinaryImageId": "jugig4owd8e3ev6jjcj7",
+            "costForTwo": "₹120 for two",
+            "cuisines": ["Ice Cream", "Desserts"],
+            "avgRating": 4.7,
+            "deliveryTime": 18
         },
         {
-            "info": {
-                "id": "34633",
-                "name": "Srikanya",
-                "cloudinaryImageId": "xvk2jlbijyejf09fdqkp",
-                "locality": "Kothaguda",
-                "areaName": "Kondapur",
-                "costForTwo": "₹400 for two",
-                "cuisines": ["Biryani", "Andhra", "South Indian"],
-                "avgRating": 4.2,
-                "parentId": "7317",
-                "avgRatingString": "4.2",
-                "totalRatingsString": "111K+",
-                "sla": {
-                    "deliveryTime": 31,
-                    "lastMileTravel": 4.6,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "30-35 mins",
-                    "lastMileTravelString": "4.6 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 22:30:00",
-                    "opened": true
-                },
-                "badges": {},
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {},
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "₹66 OFF",
-                    "subHeader": "ABOVE ₹199",
-                    "discountTag": "FLAT DEAL",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "3.9",
-                        "ratingCount": "8.0K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/srikanya-kothaguda-kondapur-rest34633",
-                "type": "WEBLINK"
-            }
+            "id": "34633",
+            "name": "Srikanya",
+            "cloudinaryImageId": "xvk2jlbijyejf09fdqkp",
+            "costForTwo": "₹400 for two",
+            "cuisines": ["Biryani", "Andhra", "South Indian"],
+            "avgRating": 4.2,
+            "deliveryTime": 31
         },
         {
-            "info": {
-                "id": "33040",
-                "name": "Shah Ghouse Hotel & Restaurant",
-                "cloudinaryImageId": "hnx9nazpxdpqpypjo8ld",
-                "locality": "Gachibowli",
-                "areaName": "Gachibowli",
-                "costForTwo": "₹350 for two",
-                "cuisines": ["Biryani", "Chinese", "Mughlai", "Tandoor"],
-                "avgRating": 4.2,
-                "parentId": "19271",
-                "avgRatingString": "4.2",
-                "totalRatingsString": "208K+",
-                "sla": {
-                    "deliveryTime": 27,
-                    "lastMileTravel": 4.1,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "25-30 mins",
-                    "lastMileTravelString": "4.1 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 23:59:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "Rxawards/_CATEGORY-Biryani.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Rxawards/_CATEGORY-Biryani.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "20% OFF",
-                    "subHeader": "UPTO ₹50"
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "3.8",
-                        "ratingCount": "47K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/shah-ghouse-hotel-and-restaurant-gachibowli-rest33040",
-                "type": "WEBLINK"
-            }
+            "id": "33040",
+            "name": "Shah Ghouse Hotel & Restaurant",
+            "cloudinaryImageId": "hnx9nazpxdpqpypjo8ld",
+            "costForTwo": "₹350 for two",
+            "cuisines": ["Biryani", "Chinese", "Mughlai", "Tandoor"],
+            "avgRating": 4.2,
+            "deliveryTime": 27
         },
         {
-            "info": {
-                "id": "548827",
-                "name": "Ikka Dukka",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/3/29/ea98a202-f4c2-49cc-b813-f22dadbad7e8_548827.jpg",
-                "locality": "Durgam Cheruvu",
-                "areaName": "Madhapur",
-                "costForTwo": "₹500 for two",
-                "cuisines": [
-                    "North Indian",
-                    "Biryani",
-                    "Tandoor",
-                    "Kebabs",
-                    "Desserts"
-                ],
-                "avgRating": 4.3,
-                "parentId": "329898",
-                "avgRatingString": "4.3",
-                "totalRatingsString": "2.3K+",
-                "sla": {
-                    "deliveryTime": 31,
-                    "lastMileTravel": 1.4,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "30-35 mins",
-                    "lastMileTravelString": "1.4 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 23:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        },
-                        {
-                            "imageId": "newg.png",
-                            "description": "Gourmet"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                },
-                                {
-                                    "attributes": {
-                                        "description": "Gourmet",
-                                        "imageId": "newg.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "₹66 OFF",
-                    "subHeader": "ABOVE ₹249",
-                    "discountTag": "FLAT DEAL",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/ikka-dukka-durgam-cheruvu-madhapur-rest548827",
-                "type": "WEBLINK"
-            }
+            "id": "548827",
+            "name": "Ikka Dukka",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/3/29/ea98a202-f4c2-49cc-b813-f22dadbad7e8_548827.jpg",
+            "costForTwo": "₹500 for two",
+            "cuisines": [
+                "North Indian",
+                "Biryani",
+                "Tandoor",
+                "Kebabs",
+                "Desserts"
+            ],
+            "avgRating": 4.3,
+            "deliveryTime": 31
         },
         {
-            "info": {
-                "id": "695920",
-                "name": "NH1 Bowls - Highway To North",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/8/a11cdc87-772b-4708-b807-737de5efbd59_695920.jpg",
-                "locality": "Madhapur",
-                "areaName": "Jubilee Hills",
-                "costForTwo": "₹250 for two",
-                "cuisines": ["North Indian", "Punjabi", "Home Food"],
-                "avgRating": 4.7,
-                "parentId": "22452",
-                "avgRatingString": "4.7",
-                "totalRatingsString": "1.1K+",
-                "sla": {
-                    "deliveryTime": 15,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "10-20 mins",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-15 02:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "₹166 OFF",
-                    "subHeader": "ABOVE ₹449",
-                    "discountTag": "FLAT DEAL",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/nh1-bowls-highway-to-north-madhapur-jubilee-hills-rest695920",
-                "type": "WEBLINK"
-            }
+            "id": "695920",
+            "name": "NH1 Bowls - Highway To North",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/11/8/a11cdc87-772b-4708-b807-737de5efbd59_695920.jpg",
+            "costForTwo": "₹250 for two",
+            "cuisines": ["North Indian", "Punjabi", "Home Food"],
+            "avgRating": 4.7,
+            "deliveryTime": 15
         },
         {
-            "info": {
-                "id": "695926",
-                "name": "LeanCrust Pizza- ThinCrust Experts",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/8/30/710eb719-028f-404b-b458-073f8beaf158_695926.jpg",
-                "locality": "Madhapur",
-                "areaName": "Jubilee Hills",
-                "costForTwo": "₹300 for two",
-                "cuisines": ["Pizzas", "Italian", "Desserts"],
-                "avgRating": 4.6,
-                "parentId": "11216",
-                "avgRatingString": "4.6",
-                "totalRatingsString": "835",
-                "sla": {
-                    "deliveryTime": 25,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "20-30 mins",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-15 02:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "textExtendedBadges": [
-                        {
-                            "iconId": "guiltfree/GF_Logo_android_3x",
-                            "shortDescription": "options available",
-                            "fontColor": "#7E808C"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {},
-                        "textBased": {},
-                        "textExtendedBadges": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "",
-                                        "fontColor": "#7E808C",
-                                        "iconId": "guiltfree/GF_Logo_android_3x",
-                                        "shortDescription": "options available"
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "₹166 OFF",
-                    "subHeader": "ABOVE ₹649",
-                    "discountTag": "FLAT DEAL",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/leancrust-pizza-thincrust-experts-madhapur-jubilee-hills-rest695926",
-                "type": "WEBLINK"
-            }
+            "id": "695926",
+            "name": "LeanCrust Pizza- ThinCrust Experts",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/8/30/710eb719-028f-404b-b458-073f8beaf158_695926.jpg",
+            "costForTwo": "₹300 for two",
+            "cuisines": ["Pizzas", "Italian", "Desserts"],
+            "avgRating": 4.6,
+            "deliveryTime": 25
         },
         {
-            "info": {
-                "id": "695927",
-                "name": "MOJO Pizza - 2X Toppings",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/12/c8b040d9-7d16-468b-8c53-a33f667bfc23_695927.jpg",
-                "locality": "Madhapur",
-                "areaName": "Jubilee Hills",
-                "costForTwo": "₹250 for two",
-                "cuisines": ["Pizzas", "Italian", "Fast Food", "Desserts"],
-                "avgRating": 4.5,
-                "parentId": "11329",
-                "avgRatingString": "4.5",
-                "totalRatingsString": "1.2K+",
-                "sla": {
-                    "deliveryTime": 25,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "20-30 mins",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-15 02:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        }
-                    ],
-                    "textExtendedBadges": [
-                        {
-                            "iconId": "guiltfree/GF_Logo_android_3x",
-                            "shortDescription": "options available",
-                            "fontColor": "#7E808C"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "",
-                                        "fontColor": "#7E808C",
-                                        "iconId": "guiltfree/GF_Logo_android_3x",
-                                        "shortDescription": "options available"
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "₹166 OFF",
-                    "subHeader": "ABOVE ₹649",
-                    "discountTag": "FLAT DEAL",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/mojo-pizza-2x-toppings-madhapur-jubilee-hills-rest695927",
-                "type": "WEBLINK"
-            }
+            "id": "695927",
+            "name": "MOJO Pizza - 2X Toppings",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/12/12/c8b040d9-7d16-468b-8c53-a33f667bfc23_695927.jpg",
+            "costForTwo": "₹250 for two",
+            "cuisines": ["Pizzas", "Italian", "Fast Food", "Desserts"],
+            "avgRating": 4.5,
+            "deliveryTime": 25
         },
         {
-            "info": {
-                "id": "47521",
-                "name": "Baskin Robbins - Ice Cream Desserts",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/2/12/5bdb383d-5661-4289-906d-acd8c5285e26_47521.jpg",
-                "locality": "Inorbit Mall",
-                "areaName": "Madhapur",
-                "costForTwo": "₹200 for two",
-                "cuisines": ["Desserts", "Ice Cream"],
-                "avgRating": 4.4,
-                "veg": true,
-                "parentId": "5588",
-                "avgRatingString": "4.4",
-                "totalRatingsString": "1.6K+",
-                "sla": {
-                    "deliveryTime": 39,
-                    "lastMileTravel": 2.4,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "35-40 mins",
-                    "lastMileTravelString": "2.4 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 22:45:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "Rxawards/_CATEGORY-Ice-creams.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Rxawards/_CATEGORY-Ice-creams.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "₹66 OFF",
-                    "subHeader": "ABOVE ₹249",
-                    "discountTag": "FLAT DEAL",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/baskin-robbins-ice-cream-desserts-inorbit-mall-madhapur-rest47521",
-                "type": "WEBLINK"
-            }
+            "id": "47521",
+            "name": "Baskin Robbins - Ice Cream Desserts",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/2/12/5bdb383d-5661-4289-906d-acd8c5285e26_47521.jpg",
+            "costForTwo": "₹200 for two",
+            "cuisines": ["Desserts", "Ice Cream"],
+            "avgRating": 4.4,
+            "deliveryTime": 39
         },
         {
-            "info": {
-                "id": "278208",
-                "name": "Theobroma",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/9/2e26cc83-037e-4ec9-9458-5c0feb27d867_278208.jpg",
-                "locality": "Madhapur",
-                "areaName": "Madhapur",
-                "costForTwo": "₹400 for two",
-                "cuisines": ["Bakery", "Desserts"],
-                "avgRating": 4.5,
-                "parentId": "1040",
-                "avgRatingString": "4.5",
-                "totalRatingsString": "2.6K+",
-                "sla": {
-                    "deliveryTime": 19,
-                    "lastMileTravel": 1.5,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "15-20 mins",
-                    "lastMileTravelString": "1.5 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-15 01:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        },
-                        {
-                            "imageId": "Rxawards/_CATEGORY-Desserts.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                },
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Rxawards/_CATEGORY-Desserts.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "15% OFF",
-                    "discountTag": "FLAT DEAL"
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "4.1",
-                        "ratingCount": "185"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/theobroma-madhapur-rest278208",
-                "type": "WEBLINK"
-            }
+            "id": "278208",
+            "name": "Theobroma",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/4/9/2e26cc83-037e-4ec9-9458-5c0feb27d867_278208.jpg",
+            "costForTwo": "₹400 for two",
+            "cuisines": ["Bakery", "Desserts"],
+            "avgRating": 4.5,
+            "deliveryTime": 19
         },
         {
-            "info": {
-                "id": "1066",
-                "name": "Rayalaseema Ruchulu",
-                "cloudinaryImageId": "f0srk5lb7iriq4rttqdh",
-                "locality": "Madhapur",
-                "areaName": "Madhapur",
-                "costForTwo": "₹450 for two",
-                "cuisines": ["South Indian", "Biryani", "Rayalaseema"],
-                "avgRating": 4.3,
-                "parentId": "766",
-                "avgRatingString": "4.3",
-                "totalRatingsString": "21K+",
-                "sla": {
-                    "deliveryTime": 28,
-                    "lastMileTravel": 0.5,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "25-30 mins",
-                    "lastMileTravelString": "0.5 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 23:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        }
-                    ],
-                    "textExtendedBadges": [
-                        {
-                            "iconId": "guiltfree/GF_Logo_android_3x",
-                            "shortDescription": "options available",
-                            "fontColor": "#7E808C"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "aggregatedDiscountInfoV2": {},
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "",
-                                        "fontColor": "#7E808C",
-                                        "iconId": "guiltfree/GF_Logo_android_3x",
-                                        "shortDescription": "options available"
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "3.7",
-                        "ratingCount": "6.3K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/rayalaseema-ruchulu-madhapur-rest1066",
-                "type": "WEBLINK"
-            }
+            "id": "1066",
+            "name": "Rayalaseema Ruchulu",
+            "cloudinaryImageId": "f0srk5lb7iriq4rttqdh",
+            "costForTwo": "₹450 for two",
+            "cuisines": ["South Indian", "Biryani", "Rayalaseema"],
+            "avgRating": 4.3,
+            "deliveryTime": 28
         },
         {
-            "info": {
-                "id": "1123",
-                "name": "Ci Gusta!",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/3/d713486a-9532-4123-9eec-426e9606edbd_1123.ss.jpg",
-                "locality": "2nd Phase",
-                "areaName": "Madhapur",
-                "costForTwo": "₹700 for two",
-                "cuisines": ["Italian", "Desserts", "Continental"],
-                "avgRating": 4.5,
-                "parentId": "19182",
-                "avgRatingString": "4.5",
-                "totalRatingsString": "8.6K+",
-                "sla": {
-                    "deliveryTime": 34,
-                    "lastMileTravel": 1.9,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "30-35 mins",
-                    "lastMileTravelString": "1.9 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-15 01:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        },
-                        {
-                            "imageId": "newg.png",
-                            "description": "Gourmet"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                },
-                                {
-                                    "attributes": {
-                                        "description": "Gourmet",
-                                        "imageId": "newg.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "₹166 OFF",
-                    "subHeader": "ABOVE ₹899",
-                    "discountTag": "FLAT DEAL",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "4.3",
-                        "ratingCount": "3.7K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/ci-gusta-2nd-phase-madhapur-rest1123",
-                "type": "WEBLINK"
-            }
+            "id": "1123",
+            "name": "Ci Gusta!",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/10/3/d713486a-9532-4123-9eec-426e9606edbd_1123.ss.jpg",
+            "costForTwo": "₹700 for two",
+            "cuisines": ["Italian", "Desserts", "Continental"],
+            "avgRating": 4.5,
+            "deliveryTime": 34
         },
         {
-            "info": {
-                "id": "65665",
-                "name": "Roast ",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/3/825207f3-a56a-4a8e-93f0-96fd8d270b22_65665 (1).jpg",
-                "locality": "Hitech City",
-                "areaName": "Hitech City",
-                "costForTwo": "₹850 for two",
-                "cuisines": ["Cafe", "Desserts", "Coffee"],
-                "avgRating": 4.5,
-                "parentId": "9946",
-                "avgRatingString": "4.5",
-                "totalRatingsString": "4.2K+",
-                "sla": {
-                    "deliveryTime": 25,
-                    "lastMileTravel": 0.4,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "25-30 mins",
-                    "lastMileTravelString": "0.4 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 23:59:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        },
-                        {
-                            "imageId": "newg.png",
-                            "description": "Gourmet"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "aggregatedDiscountInfoV2": {},
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                },
-                                {
-                                    "attributes": {
-                                        "description": "Gourmet",
-                                        "imageId": "newg.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "4.4",
-                        "ratingCount": "2.0K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/roast-hitech-city-rest65665",
-                "type": "WEBLINK"
-            }
+            "id": "65665",
+            "name": "Roast ",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/3/825207f3-a56a-4a8e-93f0-96fd8d270b22_65665 (1).jpg",
+            "costForTwo": "₹850 for two",
+            "cuisines": ["Cafe", "Desserts", "Coffee"],
+            "avgRating": 4.5,
+            "deliveryTime": 25
         },
         {
-            "info": {
-                "id": "750454",
-                "name": "Daily Kitchen - Homely Meals",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/19/8a1d8aae-63c3-4033-a8b4-5d0eac490c8f_750454.JPG",
-                "locality": "Venkatagiri",
-                "areaName": "Madhapur",
-                "costForTwo": "₹250 for two",
-                "cuisines": ["Home Food", "Indian", "North Indian", "Thalis"],
-                "avgRating": 4.6,
-                "parentId": "444382",
-                "avgRatingString": "4.6",
-                "totalRatingsString": "1.1K+",
-                "sla": {
-                    "deliveryTime": 15,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "10-20 mins",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-15 02:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        },
-                        {
-                            "imageId": "Ratnesh_Badges/Rx_Awards_2025/Newcomers.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                },
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Ratnesh_Badges/Rx_Awards_2025/Newcomers.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "₹66 OFF",
-                    "subHeader": "ABOVE ₹199",
-                    "discountTag": "FLAT DEAL",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/daily-kitchen-homely-meals-venkatagiri-madhapur-rest750454",
-                "type": "WEBLINK"
-            }
+            "id": "750454",
+            "name": "Daily Kitchen - Homely Meals",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2024/5/19/8a1d8aae-63c3-4033-a8b4-5d0eac490c8f_750454.JPG",
+            "costForTwo": "₹250 for two",
+            "cuisines": ["Home Food", "Indian", "North Indian", "Thalis"],
+            "avgRating": 4.6,
+            "deliveryTime": 15
         },
         {
-            "info": {
-                "id": "720430",
-                "name": "Go Zero Ice Creams & Desserts",
-                "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/19/4b18df18-f124-4066-a8a4-410802e73397_720430.JPG",
-                "locality": "Sai Sillicon Heights",
-                "areaName": "Madhapur",
-                "costForTwo": "₹150 for two",
-                "cuisines": ["Ice Cream", "Desserts", "Healthy Food"],
-                "avgRating": 4.3,
-                "veg": true,
-                "parentId": "343689",
-                "avgRatingString": "4.3",
-                "totalRatingsString": "384",
-                "sla": {
-                    "deliveryTime": 28,
-                    "lastMileTravel": 2,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "25-30 mins",
-                    "lastMileTravelString": "2.0 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-15 01:00:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "bolt/bolt%206.png",
-                            "description": "bolt!"
-                        }
-                    ],
-                    "textExtendedBadges": [
-                        {
-                            "iconId": "guiltfree/GF_Logo_android_3x",
-                            "shortDescription": "brand",
-                            "fontColor": "#7E808C"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "bolt!",
-                                        "imageId": "bolt/bolt%206.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "",
-                                        "fontColor": "#7E808C",
-                                        "iconId": "guiltfree/GF_Logo_android_3x",
-                                        "shortDescription": "brand"
-                                    }
-                                }
-                            ]
-                        }
-                    }
-                },
-                "aggregatedDiscountInfoV3": {
-                    "header": "66% OFF",
-                    "subHeader": "UPTO ₹126",
-                    "headerTypeV2": 12
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "--"
-                    }
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/go-zero-ice-creams-and-desserts-sai-sillicon-heights-madhapur-rest720430",
-                "type": "WEBLINK"
-            }
+            "id": "720430",
+            "name": "Go Zero Ice Creams & Desserts",
+            "cloudinaryImageId": "RX_THUMBNAIL/IMAGES/VENDOR/2025/3/19/4b18df18-f124-4066-a8a4-410802e73397_720430.JPG",
+            "costForTwo": "₹150 for two",
+            "cuisines": ["Ice Cream", "Desserts", "Healthy Food"],
+            "avgRating": 4.3,
+            "deliveryTime": 28
         },
         {
-            "info": {
-                "id": "35796",
-                "name": "Mandi @36",
-                "cloudinaryImageId": "kwvmoc0nvrzuh5nshk7z",
-                "locality": "Jubilee Hills",
-                "areaName": "Jubilee Hills",
-                "costForTwo": "₹1000 for two",
-                "cuisines": ["Arabian", "Tandoor", "Biryani"],
-                "avgRating": 4.3,
-                "parentId": "13223",
-                "avgRatingString": "4.3",
-                "totalRatingsString": "9.4K+",
-                "sla": {
-                    "deliveryTime": 33,
-                    "lastMileTravel": 3.5,
-                    "serviceability": "SERVICEABLE",
-                    "slaString": "30-35 mins",
-                    "lastMileTravelString": "3.5 km",
-                    "iconType": "ICON_TYPE_EMPTY"
-                },
-                "availability": {
-                    "nextCloseTime": "2025-04-14 23:45:00",
-                    "opened": true
-                },
-                "badges": {
-                    "imageBadges": [
-                        {
-                            "imageId": "Rxawards/_CATEGORY-Mandi.png",
-                            "description": "Delivery!"
-                        }
-                    ]
-                },
-                "isOpen": true,
-                "aggregatedDiscountInfoV2": {},
-                "type": "F",
-                "badgesV2": {
-                    "entityBadges": {
-                        "imageBased": {
-                            "badgeObject": [
-                                {
-                                    "attributes": {
-                                        "description": "Delivery!",
-                                        "imageId": "Rxawards/_CATEGORY-Mandi.png"
-                                    }
-                                }
-                            ]
-                        },
-                        "textBased": {},
-                        "textExtendedBadges": {}
-                    }
-                },
-                "differentiatedUi": {
-                    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
-                    "differentiatedUiMediaDetails": {
-                        "lottie": {},
-                        "video": {}
-                    }
-                },
-                "reviewsSummary": {},
-                "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
-                "restaurantOfferPresentationInfo": {},
-                "externalRatings": {
-                    "aggregatedRating": {
-                        "rating": "4.1",
-                        "ratingCount": "27K+"
-                    },
-                    "source": "GOOGLE",
-                    "sourceIconImageId": "v1704440323/google_ratings/rating_google_tag"
-                },
-                "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
-            },
-            "analytics": {
-                "context": "seo-data-8efbb0c8-6ef7-4997-ab42-7d3fe2e869e0"
-            },
-            "cta": {
-                "link": "https://www.swiggy.com/city/hyderabad/mandi-36-jubilee-hills-rest35796",
-                "type": "WEBLINK"
-            }
+            "id": "35796",
+            "name": "Mandi @36",
+            "cloudinaryImageId": "kwvmoc0nvrzuh5nshk7z",
+            "costForTwo": "₹1000 for two",
+            "cuisines": ["Arabian", "Tandoor", "Biryani"],
+            "avgRating": 4.3
         }
     ]
 }
