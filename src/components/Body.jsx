@@ -3,7 +3,7 @@ import { RestaurantCard } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
 
-export function Body() {
+export default function Body() {
   const [allRestaurants, setAllRestaurants] = useState([]);
   const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [showTopRated, setShowTopRated] = useState(false);
@@ -73,7 +73,10 @@ export function Body() {
           <p>No restaurants found.</p>
         ) : (
           filteredRestaurants.map((restaurant) => (
-            <Link to={`/restaurant/${restaurant.info.id}`}>
+            <Link
+              to={`/restaurant/${restaurant.info.id}`}
+              key={restaurant.info.id}
+            >
               <RestaurantCard
                 key={restaurant.info.id}
                 restaurantData={restaurant.info}
