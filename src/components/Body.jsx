@@ -8,7 +8,6 @@ export function Body() {
   const [showTopRated, setShowTopRated] = useState(false);
   const [searchText, setSearchText] = useState("");
 
-  console.log("rendering body");
   useEffect(() => {
     fetchData();
   }, []);
