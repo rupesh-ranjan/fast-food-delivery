@@ -11,7 +11,7 @@ function RestaurantMenu() {
     const fetchRestaurantMenu = async () => {
       const response = await fetch(MENU_API + restaurantId);
       const data = await response.json();
-      console.log(data.data);
+      // console.log(data.data);
       setRestaurantData(data.data);
     };
     fetchRestaurantMenu();
@@ -24,7 +24,7 @@ function RestaurantMenu() {
   const { itemCards } =
     restaurantData?.cards?.[4].groupedCard?.cardGroupMap?.REGULAR?.cards?.[1]
       ?.card?.card || null;
-  console.log(itemCards);
+  // console.log(itemCards);
 
   return (
     <div className="menu">

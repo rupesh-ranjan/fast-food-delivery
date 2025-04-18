@@ -1,9 +1,15 @@
+import User from "./User";
+import UserClass from "./UserClass.jsx";
+
 function About() {
   return (
-    <div>
+    <>
       <h1>About Us</h1>
-      <p>This is the about us page.</p>
-    </div>
+      <div className="about-page">
+        <User name={"Rupesh Ranjan"} />
+        <UserClass name={"Rupesh Ranjan"} location={"Hyderabad"} />
+      </div>
+    </>
   );
 }
 

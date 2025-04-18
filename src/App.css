@@ -82,3 +82,18 @@
 .restaurant-logo {
   width: 100%;
 }
+
+.about-page {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+}
+
+.user-card {
+  align-items: center;
+  padding: 10px;
+  background-color: #9b9f92;
+  margin: 5px;
+  width: 300px;
+}
