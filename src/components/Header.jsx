@@ -1,12 +1,9 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
 export function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
-  console.log("Body Rendered");
-  useEffect(() => {
-    console.log("useEffect");
-  }, []);
+
   return (
     <div className="header">
       <div className="logo-container">
