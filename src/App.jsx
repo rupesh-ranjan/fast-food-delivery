@@ -6,7 +6,9 @@ function App() {
   return (
     <>
       <Header />
-      <Outlet />
+      <main className="pt-20 min-h-screen">
+        <Outlet />
+      </main>
     </>
   );
 }

@@ -40,6 +40,7 @@ export default function Body() {
         Looks like you are offline. Please check your internet connection.
       </h1>
     );
+  console.log("allRestaurants", allRestaurants);
   if (allRestaurants.length === 0) return <Shimmer />;
 
   return (
@@ -57,7 +58,7 @@ export default function Body() {
               onKeyDown={(e) => e.key === "Enter" && handleSearch()}
             />
             <button
-              className="absolute right-3 top-1/2 -translate-y-1/2 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 transition-colors duration-300 shadow-md"
+              className="absolute right-3 top-1/2 -translate-y-1/2 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 cursor-pointer transition-colors duration-300 shadow-md"
               onClick={handleSearch}
             >
               Search
@@ -66,7 +67,7 @@ export default function Body() {
         </div>
 
         <button
-          className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 ${
+          className={`px-6 py-3 rounded-full font-semibold transition-all duration-300 cursor-pointer min-w-40 ${
             showTopRated
               ? "bg-green-500 text-white hover:bg-green-600"
               : "bg-white text-gray-700 border-2 border-gray-200 hover:border-blue-500 hover:text-blue-600"

@@ -8,3 +8,11 @@ export const GITHUB_API = "https://api.github.com/users/rupesh-ranjan";
 
 export const RESTAURANT_IMG_CDN_URL =
   "https://media-assets.swiggy.com/swiggy/image/upload/fl_lossy,f_auto,q_auto,w_660/";
+
+export const navItems = [
+  ["Home", "/"],
+  ["About", "/about"],
+  ["Contact", "/contact"],
+  // ["Cart", "/cart"],
+  ["Grocery", "/grocery"],
+];

@@ -1,19 +1,3 @@
-// function Contact() {
-//   return (
-//     <div className="contact">
-//       <h1>Contact Us</h1>
-//       <form className="contact-form">
-//         <input type="text" placeholder="Name" required />
-//         <input type="email" placeholder="Email" required />
-//         <textarea placeholder="Message" required></textarea>
-//         <button type="submit">Send</button>
-//       </form>
-//     </div>
-//   );
-// }
-
-// export default Contact;
-
 import {
   FaMapMarkerAlt,
   FaPhone,
@@ -23,7 +7,7 @@ import {
 
 function Contact() {
   return (
-    <div className="min-h-screen bg-gray-50 px-4 sm:px-6 lg:px-4">
+    <div className="min-h-screen bg-gray-50 my-4 p-4 sm:px-6 lg:px-4">
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">
