@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { RestaurantCard } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
@@ -11,36 +11,35 @@ export default function Body() {
   const { allRestaurants, filteredRestaurants, setFilteredRestaurants } =
     useRestaurants();
 
-  function toggleTopRated() {
-    if (showTopRated) {
-      setFilteredRestaurants(allRestaurants);
-    } else {
-      setFilteredRestaurants(
-        filteredRestaurants.filter(
-          (restaurant) => restaurant.info.avgRating >= 4.4
-        )
-      );
-    }
-    setShowTopRated(!showTopRated);
-  }
-
-  function handleSearch() {
-    const restaurants = allRestaurants.filter((restaurant) =>
+  // Real-time search and filter handling
+  useEffect(() => {
+    const baseResults = allRestaurants.filter((restaurant) =>
       restaurant.info.name
         .toLowerCase()
-        .includes(searchText.trim().toLowerCase())
+        .includes(searchText.toLowerCase().trim())
     );
-    setFilteredRestaurants(restaurants);
-  }
+
+    const finalResults = showTopRated
+      ? baseResults.filter((restaurant) => restaurant.info.avgRating >= 4.5)
+      : baseResults;
+
+    setFilteredRestaurants(finalResults);
+  }, [searchText, showTopRated, allRestaurants, setFilteredRestaurants]);
+
+  const toggleTopRated = () => {
+    setShowTopRated(!showTopRated);
+  };
 
   const online = useOnlineStatus();
   if (!online)
     return (
-      <h1>
-        Looks like you are offline. Please check your internet connection.
-      </h1>
+      <div className="text-center py-8">
+        <h1 className="text-2xl text-red-500">
+          Looks like you're offline. Please check your internet connection.
+        </h1>
+      </div>
     );
-  console.log("allRestaurants", allRestaurants);
+
   if (allRestaurants.length === 0) return <Shimmer />;
 
   return (
@@ -55,14 +54,7 @@ export default function Body() {
               className="w-full border-2 border-gray-200 focus:border-blue-500 rounded-full py-3 px-6 text-lg transition-all duration-300 focus:outline-none focus:ring-2 focus:ring-blue-200"
               value={searchText}
               onChange={(e) => setSearchText(e.target.value)}
-              onKeyDown={(e) => e.key === "Enter" && handleSearch()}
             />
-            <button
-              className="absolute right-3 top-1/2 -translate-y-1/2 bg-blue-500 text-white px-6 py-2 rounded-full hover:bg-blue-600 cursor-pointer transition-colors duration-300 shadow-md"
-              onClick={handleSearch}
-            >
-              Search
-            </button>
           </div>
         </div>
 
@@ -89,7 +81,7 @@ export default function Body() {
               className="text-blue-500 hover:underline"
               onClick={() => {
                 setSearchText("");
-                setFilteredRestaurants(allRestaurants);
+                setShowTopRated(false);
               }}
             >
               Clear filters

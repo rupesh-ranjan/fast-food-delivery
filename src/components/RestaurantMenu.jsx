@@ -25,7 +25,6 @@ function RestaurantMenu() {
     sla,
     cloudinaryImageId,
   } = restaurantData?.cards?.[2]?.card?.card?.info || {};
-  console.log(restaurantData?.cards?.[2]?.card?.card?.info);
 
   const categories =
     restaurantData?.cards?.[4]?.groupedCard?.cardGroupMap?.REGULAR?.cards?.filter(
@@ -33,7 +32,6 @@ function RestaurantMenu() {
         c?.card?.card?.["@type"]?.includes("ItemCategory") &&
         c?.card?.card?.itemCards?.length > 0
     ) || [];
-  console.log(categories);
 
   // Step 3: Filter categories based on diet preference
   const filteredCategories = categories
