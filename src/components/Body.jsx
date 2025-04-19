@@ -33,18 +33,19 @@ export default function Body() {
   if (allRestaurants.length === 0) return <Shimmer />;
 
   return (
-    <div className="body">
-      <div className="filter">
-        <div className="search">
+    <div className="body my-4">
+      <div className="flex justify-between items-center bg-gray-50">
+        <div className="mx-4 px-4">
           <input
             type="text"
             name=""
             id=""
-            className="search-box"
+            className="border border-solid border-gray-800 p-2 m-2 max-w-4/5 rounded-md"
             value={searchText}
             onChange={(e) => setSearchText(e.target.value)}
           />
           <button
+            className="bg-gray-200 px-2 mx-2 rounded-md"
             onClick={() => {
               const restaurants = allRestaurants.filter((restaurant) =>
                 restaurant.info.name
@@ -57,11 +58,18 @@ export default function Body() {
             Search
           </button>
         </div>
-        <button className="filter-btn" onClick={toggleTopRated}>
-          {showTopRated ? "Show All Restaurants" : "Show Top Rated Restaurants"}
-        </button>
+        <div className="m-4 p-4">
+          <button
+            className="bg-gray-200 p-2 m-2 rounded-md"
+            onClick={toggleTopRated}
+          >
+            {showTopRated
+              ? "Show All Restaurants"
+              : "Show Top Rated Restaurants"}
+          </button>
+        </div>
       </div>
-      <div className="restaurants-container">
+      <div className="flex justify-between m-4 gap-4 flex-wrap">
         {filteredRestaurants.length === 0 ? (
           <p>No restaurants found.</p>
         ) : (

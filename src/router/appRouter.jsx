@@ -20,11 +20,7 @@ export const appRouter = createBrowserRouter([
       // { path: "/about", element: <About /> },
       {
         path: "/about",
-        element: (
-          <Suspense fallback={<h1>Loading...</h1>}>
-            <AboutClass />
-          </Suspense>
-        ),
+        element: <About />,
       },
       { path: "/contact", element: <Contact /> },
       {
