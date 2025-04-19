@@ -30,6 +30,9 @@ export function Header() {
             <Link to="">Cart</Link>
           </li>
           <li>
+            <Link to="/grocery">Grocery</Link>
+          </li>
+          <li>
             <button
               className="login-btn"
               onClick={() => setIsLoggedIn(!isLoggedIn)}

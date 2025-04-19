@@ -19,7 +19,8 @@ class About extends React.Component {
       userInfo: data,
     });
   }
-  componentDidUpdate(prevProps, prevState) {
+  componentDidUpdate() {
+    // componentDidUpdate(prevProps, prevState) {
     // console.log("From Update", prevProps);
     // console.log("From Update", prevState);
     // console.log("From didUpdate", this.state.userInfo);
