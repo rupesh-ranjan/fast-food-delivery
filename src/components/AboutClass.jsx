@@ -5,34 +5,32 @@ import UserClass from "./UserClass.jsx";
 class About extends React.Component {
   constructor(props) {
     super(props);
-    console.log("About component constructor called");
+    // console.log("About component constructor called");
     this.state = {
       userInfo: {},
     };
   }
 
   async componentDidMount() {
-    console.log("About componentDidMount called");
+    // console.log("About componentDidMount called");
     const response = await fetch("https://api.github.com/users/rupesh-ranjan");
     const data = await response.json();
-    console.log(data);
-    console.log("From didMount", this.state.userInfo);
     this.setState({
       userInfo: data,
     });
   }
   componentDidUpdate(prevProps, prevState) {
-    console.log("From Update", prevProps);
-    console.log("From Update", prevState);
-    console.log("From didUpdate", this.state.userInfo);
-    console.log("About componentDidUpdate called");
+    // console.log("From Update", prevProps);
+    // console.log("From Update", prevState);
+    // console.log("From didUpdate", this.state.userInfo);
+    // console.log("About componentDidUpdate called");
   }
 
   componentWillUnmount() {
-    console.log("About componentWillUnmount called");
+    // console.log("About componentWillUnmount called");
   }
   render() {
-    console.log("About component render method called");
+    // console.log("About component render method called");
     const { name, location } = this.state?.userInfo || {};
     return (
       <>

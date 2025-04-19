@@ -1,30 +1,15 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { RestaurantCard } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
+import { useOnlineStatus } from "../utils/useOnlineStatus";
+import { useRestaurants } from "../utils/useRestaurants";
 
 export default function Body() {
-  const [allRestaurants, setAllRestaurants] = useState([]);
-  const [filteredRestaurants, setFilteredRestaurants] = useState([]);
   const [showTopRated, setShowTopRated] = useState(false);
   const [searchText, setSearchText] = useState("");
-
-  useEffect(() => {
-    fetchData();
-  }, []);
-
-  async function fetchData() {
-    const data = await fetch(
-      "https://www.swiggy.com/dapi/restaurants/list/v5?lat=17.4444751&lng=78.3858388&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING"
-    );
-    const json = await data.json();
-    const restaurants =
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
-        ?.restaurants;
-    setAllRestaurants(restaurants);
-    setFilteredRestaurants(restaurants);
-  }
-
+  const { allRestaurants, filteredRestaurants, setFilteredRestaurants } =
+    useRestaurants();
   function toggleTopRated() {
     if (showTopRated) {
       setFilteredRestaurants(allRestaurants);
@@ -38,7 +23,15 @@ export default function Body() {
     setShowTopRated(!showTopRated);
   }
 
+  const online = useOnlineStatus();
+  if (!online)
+    return (
+      <h1>
+        Looks like you are offline. Please check your internet connection.
+      </h1>
+    );
   if (allRestaurants.length === 0) return <Shimmer />;
+
   return (
     <div className="body">
       <div className="filter">
