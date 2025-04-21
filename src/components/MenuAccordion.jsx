@@ -10,7 +10,9 @@ const MenuAccordion = ({ category, isOpen, setShowIndex }) => {
     <div className="border rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow">
       <div
         className="flex justify-between items-center p-4 cursor-pointer"
-        onClick={() => setShowIndex()}
+        onClick={() => {
+          isOpen ? setShowIndex(-1) : setShowIndex();
+        }}
       >
         <h3 className="text-lg font-semibold text-gray-800">
           {title} {count > 0 ? `(${count})` : ""}

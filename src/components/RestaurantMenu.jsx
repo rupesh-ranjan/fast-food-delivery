@@ -138,7 +138,7 @@ function RestaurantMenu() {
             <MenuAccordion
               key={category?.title || index}
               category={category}
-              setShowIndex={() => setShowIndex(index)}
+              setShowIndex={(i = index) => setShowIndex(i)}
               isOpen={index === showIndex}
             />
           ))}
