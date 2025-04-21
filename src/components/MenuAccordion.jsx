@@ -1,7 +1,5 @@
-import { RESTAURANT_IMG_CDN_URL } from "../utils/constants";
-
+import MenuItem from "./MenuItem";
 const MenuAccordion = ({ category, isOpen, setShowIndex }) => {
-  // Safe access with optional chaining
   const itemCards = category?.itemCards || [];
   const title = category?.title || "Menu Category";
   const count = itemCards.length;
@@ -25,47 +23,7 @@ const MenuAccordion = ({ category, isOpen, setShowIndex }) => {
           {itemCards.length > 0 ? (
             itemCards.map((item) => {
               const info = item?.card?.info || {};
-              const finalPrice = (info.price || info.defaultPrice) / 100 || 0;
-
-              return (
-                <div
-                  key={info.id}
-                  className="flex gap-4 py-4 border-b last:border-0"
-                >
-                  <div className="flex-1">
-                    <div className="flex justify-between items-center">
-                      <h4 className="font-medium text-gray-800">{info.name}</h4>
-                      {info.isVeg ? (
-                        <span className="text-green-600 text-lg">🟢</span>
-                      ) : (
-                        <span className="text-red-600 text-lg">🔴</span>
-                      )}
-                    </div>
-                    {info.description && (
-                      <p className="text-sm text-gray-600 mt-1 line-clamp-2">
-                        {info.description}
-                      </p>
-                    )}
-                    <div className="mt-2 flex items-center justify-between">
-                      <span className="font-medium">
-                        ₹{finalPrice.toLocaleString()}
-                      </span>
-                    </div>
-                  </div>
-                  <div className="flex flex-col">
-                    {info.imageId && (
-                      <img
-                        src={`${RESTAURANT_IMG_CDN_URL}${info.imageId}`}
-                        alt={info.name}
-                        className="w-24 h-24 object-cover rounded-lg"
-                      />
-                    )}
-                    <button className="m-1 p-1 rounded-2xl bg-gray-600 text-white">
-                      ADD+
-                    </button>
-                  </div>
-                </div>
-              );
+              return <MenuItem key={info.id} info={info} />;
             })
           ) : (
             <div className="text-gray-500 text-center py-4">

@@ -2,6 +2,7 @@ import { createBrowserRouter } from "react-router-dom";
 import App from "../App.jsx";
 import Body from "../components/Body.jsx";
 import About from "../components/About.jsx";
+import Cart from "../components/Cart.jsx";
 // import AboutClass from "../components/AboutClass.jsx";
 import Contact from "../components/Contact.jsx";
 import Error from "../components/Error.jsx";
@@ -23,6 +24,7 @@ export const appRouter = createBrowserRouter([
         element: <About />,
       },
       { path: "/contact", element: <Contact /> },
+      { path: "/cart", element: <Cart /> },
       {
         path: "/grocery",
         element: (

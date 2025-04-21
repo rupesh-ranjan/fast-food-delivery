@@ -1,4 +1,3 @@
-// Body.jsx
 import { useState, useEffect } from "react";
 import { RestaurantCard } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
@@ -6,8 +5,6 @@ import { Link } from "react-router-dom";
 import { useOnlineStatus } from "../utils/useOnlineStatus";
 import { useRestaurants } from "../utils/useRestaurants";
 import { withLabelRestaurant } from "./RestaurantCard";
-import { useContext } from "react";
-import UserContext from "../utils/UserContext";
 
 export default function Body() {
   const [showTopRated, setShowTopRated] = useState(false);
@@ -15,8 +12,6 @@ export default function Body() {
   const { allRestaurants, filteredRestaurants, setFilteredRestaurants } =
     useRestaurants();
   const RestaurantCardPromoted = withLabelRestaurant(RestaurantCard);
-
-  const { loggedInUser, setUserName } = useContext(UserContext);
 
   // Real-time search and filter handling
   useEffect(() => {
@@ -64,14 +59,7 @@ export default function Body() {
             />
           </div>
         </div>
-        <div>
-          <input
-            type="text"
-            className="border border-black"
-            value={loggedInUser}
-            onChange={(e) => setUserName(e.target.value)}
-          />
-        </div>
+
         <button
           className={`px-8 py-3 rounded-2xl font-bold transition-all duration-300 cursor-pointer min-w-48 flex items-center justify-center gap-2 ${
             showTopRated

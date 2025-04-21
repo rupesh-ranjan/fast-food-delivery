@@ -13,6 +13,6 @@ export const navItems = [
   ["Home", "/"],
   ["About", "/about"],
   ["Contact", "/contact"],
-  // ["Cart", "/cart"],
+  ["Cart", "/cart"],
   ["Grocery", "/grocery"],
 ];

@@ -1,14 +1,13 @@
-import { useContext, useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { useOnlineStatus } from "../utils/useOnlineStatus";
 import { navItems } from "../utils/constants";
-import UserContext from "../utils/UserContext";
+import { useSelector } from "react-redux";
 
 export function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const isOnline = useOnlineStatus();
-  const user = useContext(UserContext);
-  console.log("User Context:", user);
+  const cartItems = useSelector((store) => store.cart.items);
 
   return (
     <header className="fixed w-full top-0 z-50 bg-white shadow-md">
@@ -43,7 +42,7 @@ export function Header() {
                   to={url}
                   className="text-gray-600 hover:text-blue-600 font-medium transition-colors relative group"
                 >
-                  {title}
+                  {title === "Cart" ? title + ` (${cartItems.length})` : title}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 transition-all group-hover:w-full"></span>
                 </Link>
               </li>
@@ -59,8 +58,7 @@ export function Header() {
                 }`}
               >
                 {isLoggedIn ? "Logout" : "Login"}
-              </button>{" "}
-              {user.loggedInUser}
+              </button>
             </li>
           </ul>
         </nav>

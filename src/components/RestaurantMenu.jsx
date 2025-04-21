@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import Shimmer from "./Shimmer";
 import { useParams, useNavigate } from "react-router-dom";
 import { useRestaurantMenu } from "../utils/useRestaurantMenu";
 import { RESTAURANT_IMG_CDN_URL } from "../utils/constants";
 import MenuAccordion from "./MenuAccordion";
 import { FaArrowLeft } from "react-icons/fa";
+import MenuShimmer from "./MenuShimmer";
 
 function RestaurantMenu() {
   const navigate = useNavigate();
@@ -13,7 +13,7 @@ function RestaurantMenu() {
   const [dietFilter, setDietFilter] = useState("all"); // Step 1: Add filter state
   const [showIndex, setShowIndex] = useState(0); // State to manage which accordion is open
 
-  if (!restaurantData?.cards) return <Shimmer />;
+  if (!restaurantData?.cards) return <MenuShimmer />;
 
   const {
     name,
