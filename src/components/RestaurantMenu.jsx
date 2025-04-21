@@ -11,6 +11,7 @@ function RestaurantMenu() {
   const { restaurantId } = useParams();
   const restaurantData = useRestaurantMenu(restaurantId);
   const [dietFilter, setDietFilter] = useState("all"); // Step 1: Add filter state
+  const [showIndex, setShowIndex] = useState(0); // State to manage which accordion is open
 
   if (!restaurantData?.cards) return <Shimmer />;
 
@@ -34,6 +35,8 @@ function RestaurantMenu() {
     ) || [];
 
   // Step 3: Filter categories based on diet preference
+  console.log("Rstaurant Data:", restaurantData);
+  console.log("Filtered Categories:", categories);
   const filteredCategories = categories
     .map((category) => {
       const originalCat = category?.card?.card;
@@ -132,7 +135,12 @@ function RestaurantMenu() {
       ) : (
         <div className="space-y-4">
           {filteredCategories.map((category, index) => (
-            <MenuAccordion key={category?.title || index} category={category} />
+            <MenuAccordion
+              key={category?.title || index}
+              category={category}
+              setShowIndex={() => setShowIndex(index)}
+              isOpen={index === showIndex}
+            />
           ))}
         </div>
       )}

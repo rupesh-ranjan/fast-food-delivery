@@ -49,7 +49,7 @@ export function Header() {
             <li>
               <button
                 onClick={() => setIsLoggedIn(!isLoggedIn)}
-                className={`px-6 py-2 rounded-full font-medium transition-all ${
+                className={`cursor-pointer px-6 py-2 rounded-full font-medium transition-all ${
                   isLoggedIn
                     ? "bg-gray-100 text-gray-600 hover:bg-gray-200"
                     : "bg-blue-600 text-white hover:bg-blue-700"

@@ -1,9 +1,6 @@
-import React, { useState } from "react";
 import { RESTAURANT_IMG_CDN_URL } from "../utils/constants";
 
-const MenuAccordion = ({ category }) => {
-  const [isOpen, setIsOpen] = useState(false);
-
+const MenuAccordion = ({ category, isOpen, setShowIndex }) => {
   // Safe access with optional chaining
   const itemCards = category?.itemCards || [];
   const title = category?.title || "Menu Category";
@@ -13,7 +10,7 @@ const MenuAccordion = ({ category }) => {
     <div className="border rounded-xl bg-white shadow-sm hover:shadow-md transition-shadow">
       <div
         className="flex justify-between items-center p-4 cursor-pointer"
-        onClick={() => setIsOpen(!isOpen)}
+        onClick={() => setShowIndex()}
       >
         <h3 className="text-lg font-semibold text-gray-800">
           {title} {count > 0 ? `(${count})` : ""}
@@ -33,13 +30,6 @@ const MenuAccordion = ({ category }) => {
                   key={info.id}
                   className="flex gap-4 py-4 border-b last:border-0"
                 >
-                  {info.imageId && (
-                    <img
-                      src={`${RESTAURANT_IMG_CDN_URL}${info.imageId}`}
-                      alt={info.name}
-                      className="w-24 h-24 object-cover rounded-lg"
-                    />
-                  )}
                   <div className="flex-1">
                     <div className="flex justify-between items-center">
                       <h4 className="font-medium text-gray-800">{info.name}</h4>
@@ -59,6 +49,18 @@ const MenuAccordion = ({ category }) => {
                         ₹{finalPrice.toLocaleString()}
                       </span>
                     </div>
+                  </div>
+                  <div className="flex flex-col">
+                    {info.imageId && (
+                      <img
+                        src={`${RESTAURANT_IMG_CDN_URL}${info.imageId}`}
+                        alt={info.name}
+                        className="w-24 h-24 object-cover rounded-lg"
+                      />
+                    )}
+                    <button className="m-1 p-1 rounded-2xl bg-gray-600 text-white">
+                      ADD+
+                    </button>
                   </div>
                 </div>
               );
