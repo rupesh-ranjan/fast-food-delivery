@@ -35,8 +35,7 @@ function RestaurantMenu() {
     ) || [];
 
   // Step 3: Filter categories based on diet preference
-  console.log("Rstaurant Data:", restaurantData);
-  console.log("Filtered Categories:", categories);
+
   const filteredCategories = categories
     .map((category) => {
       const originalCat = category?.card?.card;

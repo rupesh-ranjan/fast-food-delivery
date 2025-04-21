@@ -1,11 +1,14 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { useOnlineStatus } from "../utils/useOnlineStatus";
 import { navItems } from "../utils/constants";
+import UserContext from "../utils/UserContext";
 
 export function Header() {
   const [isLoggedIn, setIsLoggedIn] = useState(false);
   const isOnline = useOnlineStatus();
+  const user = useContext(UserContext);
+  console.log("User Context:", user);
 
   return (
     <header className="fixed w-full top-0 z-50 bg-white shadow-md">
@@ -56,7 +59,8 @@ export function Header() {
                 }`}
               >
                 {isLoggedIn ? "Logout" : "Login"}
-              </button>
+              </button>{" "}
+              {user.loggedInUser}
             </li>
           </ul>
         </nav>
