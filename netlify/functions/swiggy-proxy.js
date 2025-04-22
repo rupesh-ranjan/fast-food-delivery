@@ -1,14 +1,14 @@
 // netlify/functions/swiggy-proxy.js
-const axios = require("axios");
+import { get } from "axios";
 
-exports.handler = async function (event, context) {
+export async function handler(event) {
   const { lat = "17.4444751", lng = "78.3858388" } =
     event.queryStringParameters;
 
   const swiggyURL = `https://www.swiggy.com/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
 
   try {
-    const response = await axios.get(swiggyURL, {
+    const response = await get(swiggyURL, {
       headers: {
         "User-Agent": "Mozilla/5.0",
       },
@@ -25,7 +25,7 @@ exports.handler = async function (event, context) {
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: "Failed to fetch from Swiggy" }),
+      body: JSON.stringify({ error: `${error}Failed to fetch from Swiggy` }),
     };
   }
-};
+}
