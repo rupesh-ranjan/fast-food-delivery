@@ -1,31 +1,66 @@
 import { FaMapMarkerAlt, FaPhone, FaEnvelope } from "react-icons/fa";
 import ContactForm from "./ContactForm";
+import { useTheme } from "../utils/context/useTheme";
 
 function Contact() {
+  const { darkMode } = useTheme();
+
   return (
-    <div className="min-h-screen bg-gray-50 my-4 p-4 sm:px-6 lg:px-4">
+    <div
+      className={`min-h-screen my-4 p-4 sm:px-6 lg:px-4 ${
+        darkMode ? "bg-gray-900" : "bg-gray-50"
+      }`}
+    >
       <div className="max-w-7xl mx-auto">
         <div className="text-center mb-8">
-          <h1 className="text-4xl font-bold text-gray-900 mb-4">
+          <h1
+            className={`text-4xl font-bold mb-4 ${
+              darkMode ? "text-white" : "text-gray-900"
+            }`}
+          >
             Get in Touch
           </h1>
-          <p className="text-xl text-gray-600">
+          <p
+            className={`text-xl ${
+              darkMode ? "text-gray-300" : "text-gray-600"
+            }`}
+          >
             We'd love to hear from you. Let's create something amazing together.
           </p>
         </div>
 
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 bg-white rounded-2xl shadow-xl py-4 px-8">
+        <div
+          className={`grid grid-cols-1 lg:grid-cols-2 gap-12 rounded-2xl shadow-xl py-4 px-8 ${
+            darkMode ? "bg-gray-800 border border-gray-700" : "bg-white"
+          }`}
+        >
           {/* Contact Information */}
-          <div className="space-y-8 border-r border-gray-200 pr-8">
+          <div
+            className={`space-y-8 lg:border-r ${
+              darkMode ? "border-gray-700" : "border-gray-200"
+            } lg:pr-8`}
+          >
             <div className="flex items-start space-x-4">
-              <div className="bg-blue-100 p-3 rounded-full">
-                <FaMapMarkerAlt className="w-6 h-6 text-blue-600" />
+              <div
+                className={`p-3 rounded-full ${
+                  darkMode ? "bg-blue-900" : "bg-blue-100"
+                }`}
+              >
+                <FaMapMarkerAlt
+                  className={`w-6 h-6 ${
+                    darkMode ? "text-blue-300" : "text-blue-600"
+                  }`}
+                />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3
+                  className={`text-lg font-semibold ${
+                    darkMode ? "text-white" : "text-gray-900"
+                  }`}
+                >
                   Our Office
                 </h3>
-                <p className="text-gray-600">
+                <p className={darkMode ? "text-gray-300" : "text-gray-600"}>
                   Titus tower, Building 10
                   <br />
                   Hyderabad, 500081
@@ -34,14 +69,26 @@ function Contact() {
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="bg-green-100 p-3 rounded-full">
-                <FaPhone className="w-6 h-6 text-green-600" />
+              <div
+                className={`p-3 rounded-full ${
+                  darkMode ? "bg-green-900" : "bg-green-100"
+                }`}
+              >
+                <FaPhone
+                  className={`w-6 h-6 ${
+                    darkMode ? "text-green-300" : "text-green-600"
+                  }`}
+                />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3
+                  className={`text-lg font-semibold ${
+                    darkMode ? "text-white" : "text-gray-900"
+                  }`}
+                >
                   Phone Number
                 </h3>
-                <p className="text-gray-600">
+                <p className={darkMode ? "text-gray-300" : "text-gray-600"}>
                   1800-180-4567
                   <br />
                   Mon-Fri, 9am-7pm IST
@@ -50,14 +97,26 @@ function Contact() {
             </div>
 
             <div className="flex items-start space-x-4">
-              <div className="bg-purple-100 p-3 rounded-full">
-                <FaEnvelope className="w-6 h-6 text-purple-600" />
+              <div
+                className={`p-3 rounded-full ${
+                  darkMode ? "bg-purple-900" : "bg-purple-100"
+                }`}
+              >
+                <FaEnvelope
+                  className={`w-6 h-6 ${
+                    darkMode ? "text-purple-300" : "text-purple-600"
+                  }`}
+                />
               </div>
               <div>
-                <h3 className="text-lg font-semibold text-gray-900">
+                <h3
+                  className={`text-lg font-semibold ${
+                    darkMode ? "text-white" : "text-gray-900"
+                  }`}
+                >
                   Email Address
                 </h3>
-                <p className="text-gray-600">
+                <p className={darkMode ? "text-gray-300" : "text-gray-600"}>
                   hello@fastfooddelivery.com
                   <br />
                   support@fastfooddelivery.com
@@ -65,14 +124,26 @@ function Contact() {
               </div>
             </div>
 
-            <div className="pt-8 border-t border-gray-200">
-              <h3 className="text-lg font-semibold text-gray-900 mb-4">
+            <div
+              className={`pt-8 border-t ${
+                darkMode ? "border-gray-700" : "border-gray-200"
+              }`}
+            >
+              <h3
+                className={`text-lg font-semibold mb-4 ${
+                  darkMode ? "text-white" : "text-gray-900"
+                }`}
+              >
                 Follow Us
               </h3>
               <div className="flex space-x-4">
                 <a
                   href="#"
-                  className="text-gray-400 hover:text-blue-600 transition-colors"
+                  className={`transition-colors ${
+                    darkMode
+                      ? "text-gray-400 hover:text-blue-400"
+                      : "text-gray-400 hover:text-blue-600"
+                  }`}
                 >
                   <span className="sr-only">Twitter</span>
                   <svg
@@ -87,7 +158,11 @@ function Contact() {
                 <a
                   href="https://www.linkedin.com/in/rupesh-ranjan13/"
                   target="blank"
-                  className="text-gray-400 hover:text-blue-800 transition-colors"
+                  className={`transition-colors ${
+                    darkMode
+                      ? "text-gray-400 hover:text-blue-400"
+                      : "text-gray-400 hover:text-blue-800"
+                  }`}
                 >
                   <span className="sr-only">LinkedIn</span>
                   <svg
@@ -104,7 +179,7 @@ function Contact() {
           </div>
 
           {/* Contact Form */}
-          <ContactForm />
+          <ContactForm darkMode={darkMode} />
         </div>
       </div>
     </div>
