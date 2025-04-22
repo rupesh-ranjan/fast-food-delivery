@@ -3,14 +3,12 @@ import App from "../App.jsx";
 import Body from "../components/Body.jsx";
 import About from "../components/About.jsx";
 import Cart from "../components/Cart.jsx";
-// import AboutClass from "../components/AboutClass.jsx";
 import Contact from "../components/Contact.jsx";
 import Error from "../components/Error.jsx";
 import RestaurantMenu from "../components/RestaurantMenu.jsx";
 import { lazy, Suspense } from "react";
 
 const Grocery = lazy(() => import("../components/Grocery.jsx"));
-const AboutClass = lazy(() => import("../components/AboutClass.jsx"));
 
 export const appRouter = createBrowserRouter([
   {
@@ -18,11 +16,7 @@ export const appRouter = createBrowserRouter([
     element: <App />,
     children: [
       { path: "/", element: <Body /> },
-      // { path: "/about", element: <About /> },
-      {
-        path: "/about",
-        element: <About />,
-      },
+      { path: "/about", element: <About /> },
       { path: "/contact", element: <Contact /> },
       { path: "/cart", element: <Cart /> },
       {

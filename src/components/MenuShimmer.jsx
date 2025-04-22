@@ -1,56 +1,91 @@
-import React from "react";
+import { useTheme } from "../utils/context/useTheme";
 
-const MenuShimmer = () => {
-  const renderSection = (itemCount) => (
-    <div className="mb-8">
-      {/* Section Header */}
-      <div className="flex justify-between items-center mb-4">
-        <div className="h-5 w-40 bg-gray-200 rounded"></div>
-        <div className="h-6 w-6 bg-gray-200 rounded"></div>
-      </div>
+export const MenuShimmer = ({ type = "menu" }) => {
+  const { darkMode } = useTheme();
 
-      {/* Items Grid */}
-      <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
-        {Array.from({ length: itemCount }).map((_, index) => (
-          <div key={index} className="bg-gray-100 p-3 rounded-lg">
-            <div className="w-full h-40 bg-gray-200 rounded-lg mb-3"></div>
-            <div className="h-4 w-3/4 bg-gray-200 rounded mb-2"></div>
-            <div className="h-3 w-16 bg-gray-200 rounded mb-2"></div>
-            <div className="h-3 w-full bg-gray-200 rounded mb-2"></div>
-            <div className="h-4 w-20 bg-gray-200 rounded"></div>
+  // Base shimmer style
+  const shimmerBase = `animate-pulse rounded-lg ${
+    darkMode ? "bg-gray-700" : "bg-gray-200"
+  }`;
+
+  // Menu Page Shimmer
+  if (type === "menu") {
+    return (
+      <div
+        className={`max-w-4xl mx-auto p-4 ${darkMode ? "bg-gray-900" : "bg-white"}`}
+      >
+        {/* Back Button Shimmer */}
+        <div className={`h-6 w-24 mb-6 ${shimmerBase}`}></div>
+
+        {/* Restaurant Header Shimmer */}
+        <div className="flex flex-col md:flex-row gap-8 mb-8">
+          <div className={`w-full md:w-64 h-48 ${shimmerBase}`}></div>
+          <div className="flex-1 space-y-4">
+            <div className={`h-8 w-3/4 ${shimmerBase}`}></div>
+            <div className={`h-4 w-full ${shimmerBase}`}></div>
+            <div className="flex gap-4">
+              <div className={`h-6 w-16 ${shimmerBase}`}></div>
+              <div className={`h-6 w-24 ${shimmerBase}`}></div>
+              <div className={`h-6 w-32 ${shimmerBase}`}></div>
+            </div>
+            <div className={`h-4 w-1/2 ${shimmerBase}`}></div>
           </div>
-        ))}
-      </div>
-    </div>
-  );
-
-  return (
-    <div className="max-w-4xl mx-auto p-4 animate-pulse">
-      {/* Restaurant Header */}
-      <div className="mb-6">
-        <div className="h-8 w-64 bg-gray-200 rounded mb-3"></div>
-        <div className="flex gap-4 mb-3">
-          <div className="h-5 w-24 bg-gray-200 rounded"></div>
-          <div className="h-5 w-32 bg-gray-200 rounded"></div>
-          <div className="h-5 w-36 bg-gray-200 rounded"></div>
         </div>
-        <div className="h-4 w-48 bg-gray-200 rounded"></div>
-      </div>
 
-      {/* Filters */}
-      <div className="flex gap-4 mb-6">
-        {["All", "Veg", "Non-Veg"].map((_, index) => (
-          <div key={index} className="h-10 w-20 bg-gray-200 rounded-full"></div>
-        ))}
-      </div>
+        {/* Filter Buttons Shimmer */}
+        <div className="flex gap-3 mb-6">
+          <div className={`h-8 w-16 ${shimmerBase}`}></div>
+          <div className={`h-8 w-16 ${shimmerBase}`}></div>
+          <div className={`h-8 w-20 ${shimmerBase}`}></div>
+        </div>
 
-      {/* Menu Sections */}
-      {renderSection(3)}
-      {renderSection(2)}
-      {renderSection(4)}
-      {renderSection(3)}
-      {renderSection(2)}
-    </div>
+        {/* Menu Categories Shimmer */}
+        <div className="space-y-4">
+          {[...Array(5)]?.map((_, i) => (
+            <div key={i} className={`h-16 ${shimmerBase}`}></div>
+          ))}
+        </div>
+      </div>
+    );
+  }
+
+  // Menu Accordion Shimmer
+  if (type === "accordion") {
+    return (
+      <div
+        className={`border rounded-xl shadow-sm ${
+          darkMode ? "bg-gray-800 border-gray-700" : "bg-white border-gray-200"
+        }`}
+      >
+        <div className={`h-16 ${shimmerBase}`}></div>
+      </div>
+    );
+  }
+
+  // Menu Item Shimmer
+  if (type === "item") {
+    return (
+      <div
+        className={`flex gap-4 py-4 border-b ${
+          darkMode ? "border-gray-700" : "border-gray-200"
+        }`}
+      >
+        <div className="flex-1 space-y-3">
+          <div className={`h-5 w-3/4 ${shimmerBase}`}></div>
+          <div className={`h-4 w-full ${shimmerBase}`}></div>
+          <div className={`h-5 w-1/4 ${shimmerBase}`}></div>
+        </div>
+        <div className="flex flex-col items-end space-y-2">
+          <div className={`w-24 h-24 ${shimmerBase}`}></div>
+          <div className={`h-8 w-16 ${shimmerBase}`}></div>
+        </div>
+      </div>
+    );
+  }
+
+  // Default Shimmer (can be used for other components)
+  return (
+    <div className={`w-full ${shimmerBase}`} style={{ height: "100px" }}></div>
   );
 };
 

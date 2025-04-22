@@ -53,13 +53,13 @@ export function Header() {
           </button>
 
           <ul className="flex items-center gap-6">
-            {navItems.map(([title, url]) => (
+            {navItems?.map(([title, url]) => (
               <li key={title}>
                 <Link
                   to={url}
                   className="text-gray-600 dark:text-gray-300 hover:text-blue-600 dark:hover:text-blue-400 font-medium transition-colors relative group"
                 >
-                  {title === "Cart" ? title + ` (${cartItems.length})` : title}
+                  {title === "Cart" ? title + ` (${cartItems?.length})` : title}
                   <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-blue-600 dark:bg-blue-400 transition-all group-hover:w-full"></span>
                 </Link>
               </li>

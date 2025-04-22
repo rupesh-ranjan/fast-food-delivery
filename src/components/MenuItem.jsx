@@ -1,8 +1,10 @@
 import { useDispatch, useSelector } from "react-redux";
 import { RESTAURANT_IMG_CDN_URL } from "../utils/constants";
 import { addItem, removeItem } from "../utils/slice/cartSlice";
+import { useTheme } from "../utils/context/useTheme";
 
 function MenuItem({ info }) {
+  const { darkMode } = useTheme();
   const dispatch = useDispatch();
   function handleAddItem(item) {
     dispatch(addItem(item));
@@ -19,10 +21,20 @@ function MenuItem({ info }) {
   const itemQuantity = cartItem.quantity || 0;
 
   return (
-    <div className="flex gap-4 py-4 border-b last:border-0">
+    <div
+      className={`flex gap-4 py-4 ${
+        darkMode ? "border-gray-700" : "border-gray-200"
+      } border-b last:border-0`}
+    >
       <div className="flex-1">
         <div className="flex justify-between items-center">
-          <h4 className="font-medium text-gray-800">{info.name}</h4>
+          <h4
+            className={`font-medium ${
+              darkMode ? "text-gray-100" : "text-gray-800"
+            }`}
+          >
+            {info.name}
+          </h4>
           {info.isVeg ? (
             <span className="text-green-600 text-lg">🟢</span>
           ) : (
@@ -30,12 +42,22 @@ function MenuItem({ info }) {
           )}
         </div>
         {info.description && (
-          <p className="text-sm text-gray-600 mt-1 line-clamp-2">
+          <p
+            className={`text-sm mt-1 line-clamp-2 ${
+              darkMode ? "text-gray-400" : "text-gray-600"
+            }`}
+          >
             {info.description}
           </p>
         )}
         <div className="mt-2 flex items-center justify-between">
-          <span className="font-medium">₹{finalPrice.toLocaleString()}</span>
+          <span
+            className={`font-medium ${
+              darkMode ? "text-gray-100" : "text-gray-800"
+            }`}
+          >
+            ₹{finalPrice.toLocaleString()}
+          </span>
         </div>
       </div>
       <div className="flex flex-col">
@@ -48,22 +70,41 @@ function MenuItem({ info }) {
         )}
 
         <div
-          className={`flex gap-2 p-0.5 my-0.5 px-2 bg-green-400 rounded-2xl ${itemQuantity === 0 ? "justify-center" : "justify-between"}`}
+          className={`flex gap-2 p-0.5 my-0.5 px-2 rounded-2xl ${
+            itemQuantity === 0
+              ? "justify-center bg-green-500 hover:bg-green-600"
+              : "justify-between bg-green-600"
+          } transition-colors`}
         >
-          {itemQuantity === 0 ? null : (
-            <button onClick={() => handleRemoveItem(info)}>➖</button>
-          )}
           {itemQuantity === 0 ? (
-            <button onClick={() => handleAddItem(info)}>{"ADD"}</button>
+            <button
+              onClick={() => handleAddItem(info)}
+              className="text-white font-medium cursor-pointer w-full"
+            >
+              ADD
+            </button>
           ) : (
-            <span className="font-semibold">{itemQuantity}</span>
-          )}
-          {itemQuantity === 0 ? null : (
-            <button onClick={() => handleAddItem(info)}>➕</button>
+            <>
+              <button
+                onClick={() => handleRemoveItem(info)}
+                className="text-white cursor-pointer"
+              >
+                ➖
+              </button>
+              <span className="font-semibold text-white">{itemQuantity}</span>
+
+              <button
+                onClick={() => handleAddItem(info)}
+                className="text-white cursor-pointer"
+              >
+                ➕
+              </button>
+            </>
           )}
         </div>
       </div>
     </div>
   );
 }
+
 export default MenuItem;

@@ -2,8 +2,10 @@ import { useDispatch, useSelector } from "react-redux";
 import MenuItem from "./MenuItem";
 import { clearCart } from "../utils/slice/cartSlice";
 import { Link } from "react-router-dom";
+import { useTheme } from "../utils/context/useTheme";
 
 function Cart() {
+  const { darkMode } = useTheme();
   const dispatch = useDispatch();
 
   function handleClearCart() {
@@ -12,47 +14,108 @@ function Cart() {
 
   const cart = useSelector((store) => store.cart);
   const { items: cartItems, totalItems, totalPrice } = cart;
-  console.log(cartItems);
+
   return (
-    <div className="m-4 p-4 text-center border-t">
-      <h1 className="text-2xl font-bold mb-4">Shopping Cart</h1>
+    <div
+      className={`mx-auto py-8 px-4 sm:px-6 lg:px-8 max-w-7xl ${
+        darkMode ? "text-gray-100" : "text-gray-800"
+      }`}
+    >
+      <div className="text-center mb-8">
+        <h1 className="text-3xl font-bold mb-2">Shopping Cart</h1>
+        {cartItems.length === 0 && (
+          <p className="text-lg">Your food cart is waiting to be filled!</p>
+        )}
+      </div>
 
       {cartItems.length > 0 ? (
-        <>
-          <button
-            className="p-2 m-2 bg-gray-500 text-white rounded-2xl"
-            onClick={handleClearCart}
-          >
-            Clear cart
-          </button>
-          <div className="items-center mt-5">
-            <Link
-              to="/"
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
-            >
-              Continue Shopping
-            </Link>
+        <div className="flex flex-col lg:flex-row gap-8">
+          {/* Cart Items */}
+          <div className="lg:flex-1">
+            <div className="flex justify-between items-center mb-6">
+              <button
+                onClick={handleClearCart}
+                className={`px-4 py-2 rounded-lg ${
+                  darkMode
+                    ? "bg-gray-700 hover:bg-gray-600"
+                    : "bg-gray-200 hover:bg-gray-300"
+                } transition-colors`}
+              >
+                🗑️ Clear Cart
+              </button>
+              <Link
+                to="/"
+                className={`px-6 py-2 rounded-lg ${
+                  darkMode
+                    ? "bg-blue-600 hover:bg-blue-500"
+                    : "bg-blue-600 hover:bg-blue-700"
+                } text-white transition-colors`}
+              >
+                ← Continue Shopping
+              </Link>
+            </div>
+
+            <div className="space-y-6">
+              {cartItems.map((item) => (
+                <div key={item.id} className="flex justify-center">
+                  <div className="w-full max-w-3xl">
+                    <MenuItem info={item} />
+                  </div>
+                </div>
+              ))}
+            </div>
           </div>
 
-          {cartItems.map((item) => (
-            <div key={item.id} className="mb-0 px-50">
-              <MenuItem info={item} />
+          {/* Order Summary */}
+          <div
+            className={`lg:w-96 p-6 rounded-xl ${
+              darkMode ? "bg-gray-800" : "bg-gray-100"
+            }`}
+          >
+            <h2 className="text-xl font-bold mb-4">Order Summary</h2>
+            <div className="space-y-4">
+              <div className="flex justify-between font-semibold">
+                <span>Total Items </span>
+                <span>{totalItems}</span>
+              </div>
+              <div className="flex justify-between font-bold text-lg">
+                <span>Total</span>
+                <span>₹{totalPrice}</span>
+              </div>
+              <button
+                className={`w-full py-3 rounded-lg ${
+                  darkMode
+                    ? "bg-green-600 hover:bg-green-500"
+                    : "bg-green-600 hover:bg-green-700"
+                } text-white font-bold transition-colors`}
+              >
+                Proceed to Checkout
+              </button>
             </div>
-          ))}
-          <div className="flex justify-between text-center w-9/12 mx-auto mt-4 p-4 bg-gray-100 rounded-lg shadow-md">
-            <span>Total ({totalItems} Items)</span>
-            <span>₹{totalPrice}</span>
           </div>
-        </>
+        </div>
       ) : (
-        <div className="bg-white shadow-md rounded-lg p-6">
-          <p>Your cart is empty...</p>
-          <div className="items-center mt-5">
+        <div className="text-center max-w-md mx-auto">
+          <div
+            className={`p-8 rounded-xl mb-6 ${
+              darkMode ? "bg-gray-800" : "bg-white shadow-md"
+            }`}
+          >
+            <p className="text-xl mb-4">Your cart is empty</p>
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/11329/11329060.png"
+              alt="Empty cart"
+              className="w-32 h-32 mx-auto mb-6"
+            />
             <Link
               to="/"
-              className="px-6 py-3 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors font-medium"
+              className={`px-8 py-3 rounded-lg ${
+                darkMode
+                  ? "bg-blue-600 hover:bg-blue-500"
+                  : "bg-blue-600 hover:bg-blue-700"
+              } text-white font-medium inline-block transition-colors`}
             >
-              Start Ordering
+              Browse Restaurants
             </Link>
           </div>
         </div>

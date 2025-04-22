@@ -29,7 +29,7 @@ const cartSlice = createSlice({
       if (existingItem) {
         state.totalItems -= 1;
         if (existingItem.quantity === 1)
-          state.items = state.items.filter((i) => i.id !== itemId);
+          state.items = state.items?.filter((i) => i.id !== itemId);
         else existingItem.quantity -= 1;
         state.totalPrice -=
           existingItem.price || existingItem.defaultPrice / 100;
