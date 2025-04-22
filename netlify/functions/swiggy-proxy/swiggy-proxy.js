@@ -1,4 +1,3 @@
-// netlify/functions/swiggy-proxy.js
 import { get } from "axios";
 
 export async function handler(event) {
@@ -25,7 +24,7 @@ export async function handler(event) {
   } catch (error) {
     return {
       statusCode: 500,
-      body: JSON.stringify({ error: `${error}Failed to fetch from Swiggy` }),
+      body: JSON.stringify({ error: `${error} Failed to fetch from Swiggy` }),
     };
   }
 }
