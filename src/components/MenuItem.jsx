@@ -36,9 +36,15 @@ function MenuItem({ info }) {
             {info.name}
           </h4>
           {info.isVeg ? (
-            <span className="text-green-600 text-lg">🟢</span>
+            <div className="flex items-center">
+              <span className="w-3 h-3 rounded-full bg-green-500 mr-1"></span>
+              <span className="text-xs text-green-600">Veg</span>
+            </div>
           ) : (
-            <span className="text-red-600 text-lg">🔴</span>
+            <div className="flex items-center">
+              <span className="w-3 h-3 rounded-full bg-red-500 mr-1"></span>
+              <span className="text-xs text-red-600">Non-Veg</span>
+            </div>
           )}
         </div>
         {info.description && (
