@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import { RestaurantCard } from "./RestaurantCard";
 import Shimmer from "./Shimmer";
 import { Link } from "react-router-dom";
-import { useOnlineStatus } from "../utils/useOnlineStatus";
+import useOnlineStatus from "../utils/useOnlineStatus";
 import { useRestaurants } from "../utils/useRestaurants";
 import { useTheme } from "../utils/context/useTheme";
 

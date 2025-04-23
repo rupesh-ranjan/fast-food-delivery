@@ -22,6 +22,7 @@ function MenuItem({ info }) {
 
   return (
     <div
+      data-testid="menuItem"
       className={`flex gap-4 py-4 ${
         darkMode ? "border-gray-700" : "border-gray-200"
       } border-b last:border-0`}

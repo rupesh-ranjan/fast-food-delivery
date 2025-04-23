@@ -9,6 +9,7 @@ export function RestaurantCard({ restaurantData }) {
 
   return (
     <div
+      data-testid="restaurantCard"
       className={`h-full rounded-2xl shadow-lg hover:shadow-2xl transition-all duration-300 overflow-hidden group ${
         darkMode ? "bg-gray-800" : "bg-white"
       }`}

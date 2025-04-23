@@ -10,10 +10,10 @@ export const useRestaurants = () => {
   }, []);
 
   async function fetchData() {
-    const data = await fetch(RESTAURANT_API);
-    const json = await data.json();
+    const response = await fetch(RESTAURANT_API);
+    const data = await response.json();
     const restaurants =
-      json?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
+      data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
         ?.restaurants;
     setAllRestaurants(restaurants);
     setFilteredRestaurants(restaurants);

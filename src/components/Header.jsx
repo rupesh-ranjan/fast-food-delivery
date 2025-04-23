@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Link, useLocation } from "react-router-dom";
-import { useOnlineStatus } from "../utils/useOnlineStatus";
+import useOnlineStatus from "../utils/useOnlineStatus";
 import { navItems } from "../utils/constants";
 import { useSelector } from "react-redux";
 import { useTheme } from "../utils/context/useTheme";
