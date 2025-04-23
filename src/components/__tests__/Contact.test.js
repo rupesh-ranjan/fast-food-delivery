@@ -1,5 +1,6 @@
 /* eslint-disable no-undef */
-import { render, screen } from "@testing-library/react";
+import { render } from "../../utils/test-utils.js";
+import { screen } from "@testing-library/react";
 import Contact from "../Contact";
 import "@testing-library/jest-dom/";
 
