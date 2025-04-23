@@ -1,6 +1,9 @@
 import { RESTAURANT_IMG_CDN_URL } from "../utils/constants";
+import { useTheme } from "../utils/context/useTheme";
 
-export function RestaurantCard({ restaurantData, darkMode }) {
+export function RestaurantCard({ restaurantData }) {
+  const { darkMode } = useTheme();
+
   const { cloudinaryImageId, name, cuisines, avgRating, costForTwo, sla } =
     restaurantData;
 

@@ -1,0 +1,72 @@
+{
+  "id": "854558",
+  "name": "Barista Coffee",
+  "cloudinaryImageId": "f6cfa63e1503c62607357238b28857f2",
+  "locality": "Madhapur",
+  "areaName": "Madhapur",
+  "costForTwo": "₹350 for two",
+  "cuisines": ["Beverages", "Snacks", "Desserts"],
+  "avgRating": 4.1,
+  "parentId": "416281",
+  "avgRatingString": "4.1",
+  "totalRatingsString": "67",
+  "sla": {
+    "deliveryTime": 35,
+    "lastMileTravel": 0.4,
+    "serviceability": "SERVICEABLE",
+    "slaString": "35-40 mins",
+    "lastMileTravelString": "0.4 km",
+    "iconType": "ICON_TYPE_EMPTY"
+  },
+  "availability": {
+    "nextCloseTime": "2025-04-30 00:00:00",
+    "opened": true
+  },
+  "badges": {
+    "imageBadges": [
+      {
+        "imageId": "bolt/bolt%206.png",
+        "description": "bolt!"
+      }
+    ]
+  },
+  "isOpen": true,
+  "type": "F",
+  "badgesV2": {
+    "entityBadges": {
+      "imageBased": {
+        "badgeObject": [
+          {
+            "attributes": {
+              "description": "bolt!",
+              "imageId": "bolt/bolt%206.png"
+            }
+          }
+        ]
+      },
+      "textBased": {},
+      "textExtendedBadges": {}
+    }
+  },
+  "aggregatedDiscountInfoV3": {
+    "header": "₹200 OFF",
+    "subHeader": "ABOVE ₹599",
+    "discountTag": "FLAT DEAL"
+  },
+  "differentiatedUi": {
+    "displayType": "ADS_UI_DISPLAY_TYPE_ENUM_DEFAULT",
+    "differentiatedUiMediaDetails": {
+      "lottie": {},
+      "video": {}
+    }
+  },
+  "reviewsSummary": {},
+  "displayType": "RESTAURANT_DISPLAY_TYPE_DEFAULT",
+  "restaurantOfferPresentationInfo": {},
+  "externalRatings": {
+    "aggregatedRating": {
+      "rating": "--"
+    }
+  },
+  "ratingsDisplayPreference": "RATINGS_DISPLAY_PREFERENCE_SHOW_SWIGGY"
+}

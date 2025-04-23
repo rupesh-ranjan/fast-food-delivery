@@ -119,10 +119,7 @@ export default function Body() {
               key={restaurant.info.id}
               className="transform transition-transform duration-300 hover:scale-[1.02]"
             >
-              <RestaurantCard
-                restaurantData={restaurant.info}
-                darkMode={darkMode}
-              />
+              <RestaurantCard restaurantData={restaurant.info} />
             </Link>
           ))
         )}
