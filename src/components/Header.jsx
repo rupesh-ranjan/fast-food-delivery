@@ -82,10 +82,15 @@ export function Header() {
                 </nav>
                 {/* Mobile Navigation */}
                 {mobileMenuOpen && (
-                    <div className="md:hidden fixed inset-0 bg-black bg-opacity-50 z-40 mt-[4.5rem]">
-                        {/* Fixed: Adjusted z-index and margin */}
+                    <div className="md:hidden fixed inset-0 z-40 flex">
+                        {/* Overlay that closes the menu when clicked */}
                         <div
-                            className={`p-6 w-1/2 h-full ${darkMode ? "bg-gray-800" : "bg-white"} shadow-lg`}
+                            className="fixed inset-0 bg-black bg-opacity-50"
+                            onClick={() => setMobileMenuOpen(false)}
+                        ></div>
+                        {/* Sidebar */}
+                        <div
+                            className={`relative p-6 w-64 max-w-xs h-full ${darkMode ? "bg-gray-800" : "bg-white"} shadow-lg`}
                         >
                             <div className="flex flex-col items-center gap-6">
                                 <OnlineStatusIndicator
@@ -203,13 +208,6 @@ const NavigationLinks = ({
                     {title === "Cart"
                         ? `${title} (${cartItems?.length})`
                         : title}
-                    <span
-                        className={`absolute -bottom-1 left-0 h-0.5 transition-all ${
-                            isActive(url)
-                                ? "w-full bg-blue-600 dark:bg-blue-400"
-                                : "w-0 bg-blue-600 dark:bg-blue-400 group-hover:w-full"
-                        }`}
-                    ></span>
                 </Link>
             </li>
         ))}
