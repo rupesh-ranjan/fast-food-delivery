@@ -1,8 +1,8 @@
 export const MENU_API =
-    "http://localhost:3001/api/swiggy/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.4444751&lng=78.3858388&restaurantId=";
+    "/api/swiggy/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=17.4444751&lng=78.3858388&restaurantId=";
 
 export const RESTAURANT_API =
-    "http://localhost:3001/api/swiggy/dapi/restaurants/list/v5?lat=17.4444751&lng=78.3858388&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
+    "/api/swiggy/dapi/restaurants/list/v5?lat=17.4444751&lng=78.3858388&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING";
 
 export const GITHUB_API = "https://api.github.com/users/rupesh-ranjan";
 
