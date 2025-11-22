@@ -32,16 +32,14 @@ export const getUserLocation = () => {
 };
 
 // Function to generate API URLs with dynamic coordinates
-export const getMenuAPI = (restaurantId) => {
-    return getUserLocation().then(({ lat, lng }) => {
-        return `/api/swiggy/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${restaurantId}`;
-    });
+export const getMenuAPI = async (restaurantId) => {
+    const { lat, lng } = await getUserLocation();
+    return `/api/swiggy/dapi/menu/pl?page-type=REGULAR_MENU&complete-menu=true&lat=${lat}&lng=${lng}&restaurantId=${restaurantId}`;
 };
 
-export const getRestaurantAPI = () => {
-    return getUserLocation().then(({ lat, lng }) => {
-        return `/api/swiggy/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
-    });
+export const getRestaurantAPI = async () => {
+    const { lat, lng } = await getUserLocation();
+    return `/api/swiggy/dapi/restaurants/list/v5?lat=${lat}&lng=${lng}&is-seo-homepage-enabled=true&page_type=DESKTOP_WEB_LISTING`;
 };
 
 // Legacy constants for backward compatibility (will be deprecated)

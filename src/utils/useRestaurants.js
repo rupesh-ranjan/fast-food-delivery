@@ -1,5 +1,5 @@
 import { useEffect, useState } from "react";
-import { getRestaurantAPI } from "./constants";
+import RESTAURANTS_MOCK from "../components/mocks/restaurantsListMock.json";
 
 export const useRestaurants = () => {
     const [allRestaurants, setAllRestaurants] = useState([]);
@@ -16,15 +16,12 @@ export const useRestaurants = () => {
             setLoading(true);
             setError(null);
 
-            // Get dynamic API URL based on user's location
-            const apiUrl = await getRestaurantAPI();
-            const response = await fetch(apiUrl);
+            // Simulate network delay
+            await new Promise((resolve) => setTimeout(resolve, 1000));
 
-            if (!response.ok) {
-                throw new Error(`HTTP error! status: ${response.status}`);
-            }
-
-            const data = await response.json();
+            // Use mock data instead of API call
+            const data = RESTAURANTS_MOCK;
+            
             const restaurants =
                 data?.data?.cards[1]?.card?.card?.gridElements?.infoWithStyle
                     ?.restaurants;
